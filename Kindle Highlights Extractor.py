@@ -49,8 +49,7 @@ def main():
         if str(path1).split('/')[-1] == 'My Clippings.txt':
             break
         elif str(path1) == '':
-            print("You have not selected a file. The program is terminated.")
-            sys.exit()
+            sys.exit("You have not selected a file. The program is terminated.")
         else:
             print("Please select My Clippings.txt File only")
             path1 = filedialog.askopenfilename(initialdir = "/",title = "Please select My Clippings.txt File only")
